@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp-logIn.css">
+    <title>Email</title>
+</head>
+<body>
+    
+    <div class="sign-up-outer-formBox">
+
+        <p class="choice">
+            <a class="anchor" href="#barca" onclick="showSignUp()"> Sign Up </a>
+            <a class="anchor" href="#psg" onclick="showSignIn()"> Log In </a>
+        </p>
+
+            <div id="sign-up-form">
+                <h1> Sign Up! </h1>
+                
+                <div class="sign-up-details">
+                    <form action="">
+
+                        <input type="tel" class="blank" id="phone-number" name="phone-number" placeholder="Phone Number" required> <br><br>
+                        <input type="text" class="blank" id="full-name" name="full-name" placeholder="Full Name" required> <br><br>
+                        <input type="text" class="blank" id="username" name="username" placeholder="Username" required> <br><br>
+                        <input type="password" class="blank" id="create_password" name="create_password" placeholder="Create Password" required> <br> <br>
+                        
+                        <input type="submit" class="submit-button" value="Submit" >
+                    </form>
+                </div>
+            </div>
+
+            <div id="sign-in-form" style="display: none;">
+                <h1> Log In! </h1>
+                
+                <div class="sign-in-details">
+                    <form action="">
+                        <input type="text" class="blank" id="username" name="username" placeholder="Username" required> <br><br>
+                        <input type="password" class="blank" id="password" name="password" placeholder="Password" required> <br> <br>
+                        
+                        <button type="button" class="submit-button" src="showSignUpAcc.html">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div id="signUp" style="display: none;">
+                <p> Phone Number: <span id="phoneNumber"></span></p>
+                <p> Full Name: <span id="fullName"></span></p>
+                <p> Username: <span id="username"></span></p>
+                <p> Created Password: <span id="createPassword"></span></p>
+            </div>
+    </div>
+
+    <script src = "signUp-logIn.js"></script>
+
+</body>
+</html>

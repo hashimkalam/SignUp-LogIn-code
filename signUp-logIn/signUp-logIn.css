@@ -1,0 +1,99 @@
+body {
+    font-family: Verdana;
+    background-image: linear-gradient(to bottom, blueviolet, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    background-color: #fff;
+    box-shadow: 0 0 5px 5px black;
+    border: 5px solid rgb(255, 183, 0);
+    border-radius: 50%;
+    padding: 20px;
+    width: 20%;
+    transform: translate(112%, 0%);
+}
+
+.sign-up-outer-formBox {
+    background-color: rgb(255, 183, 0);
+    width: 35%;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 0 0 50px 50px;   
+    box-shadow: 0px 0px 5px 5px black;
+}
+
+#sign-up-form, #sign-in-form, #signUp {
+    padding: 0px 20px 50px 20px; 
+}
+
+.sign-up-details, .sign-in-details {
+    width: 35%;
+    text-align: center;
+    transform: translate(90%, 0%);
+}
+
+#phone-number, #full-name, #username, #create_password, #password {
+    text-align: center;
+}
+  
+
+
+.choice{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* chatgpt code lol */
+    margin: 0;
+    padding: 0;
+}
+
+.anchor {
+    background-color: rgb(159, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 45px;
+    text-decoration: none;
+
+    color: black;
+    transition: width 0.3s ease;
+}
+
+.anchor:hover {
+    font-size: large;
+    color: #fff;
+    background-color: black;
+    opacity: .8;
+    width: 350px;
+    
+}
+
+.anchor li {
+    margin: 0 100px;
+}
+
+.blank {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 25px;     
+}
+
+.submit-button {
+    padding: 10px;
+    margin-top: 25px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
